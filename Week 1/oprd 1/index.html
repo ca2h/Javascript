@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn eerste JavaScript</title>
+</head>
+<body>
+<h1>Welkom bij JavaScript!</h1>
+<button onclick="toonBericht()">Klik op mij!</button>
+<button onclick="test()"> yo wsg</button>
+<button onclick="dezeis2()">klik ook op mij</button>
+<button onclick="vraagnaam()">Wat is je naam</button>
+<button onclick ="con()">confirm</button>
+<button onclick="dier()">wat is je lievelingds dier</button>
+
+
+<button onclick="voorstellern()">stel je zelf voor</button>
+<script>
+
+    function dier() {
+        let dier = prompt("Wat is je favoriete dier")
+        console.log("mijn favo dier is " + dier)
+        if (dier.toLowerCase() === "hond") {
+            alert("Wat leuk die van mij ook!");
+        }
+        else {
+            alert("Oh ja die van mij een hond.")
+        }
+    }
+
+    function voorstellern() {
+        let name = prompt("Wat is je naam?")
+        let age = prompt("Hoe oud ben jij?")
+        alert("Hallo " + name + " " + age + " is een mooie leeftijd.")
+
+    }
+
+
+    function con() {
+        let bevestiging = confirm("Ben je zeker dat je door wilt gaan?");
+        if (bevestiging) {
+            alert("Je hebt bevestigd!");
+        } else {
+            alert("Je hebt geannuleerd.");
+        }
+    }
+    function toonBericht() {
+        alert("Yo wsg bertug is een sneaky golem");
+    }
+    function  test() {
+        alert("Welkom bij JavaScript!");
+    }
+
+    function dezeis2() {
+        alert("Welkom bij JavaScript!");
+        alert("test");
+    }
+function vraagnaam() {
+    let naam = prompt("Wat is je naam?");
+    alert("Hallo, " + naam + "! Welkom.");
+}
+</script>
+</body>
+</html>

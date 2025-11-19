@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="game()">speel de game</button>
+<p id="antwoord"></p>
+<script>
+
+
+
+    function game() {
+        let geheimGetal = Math.floor(Math.random() * 10) + 1;
+        while (true) {
+            let gok = prompt("Gok een getal");
+            if (gok === null) {
+                document.getElementById("antwoord").innerText = "Spel gestopt.";
+                return;
+            }
+            gok = Number(gok);
+            if (gok === geheimGetal) {
+                document.getElementById("antwoord").innerText = "je hebt het goed geraden het getal was: " + geheimGetal;
+                break;
+            }
+            else {
+                alert("Fout je mag nog is proberen")
+            }
+        }
+        console.log(geheimGetal);
+        console.log("Geheim getal was:", geheimGetal);
+    }
+
+
+</script>
+</body>
+</html>

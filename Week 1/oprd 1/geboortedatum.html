@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>geboorte jaar calculator</h1>
+
+<button onclick="calc()">Bereken</button>
+
+<script>
+    function calc() {
+        let jaar = prompt("Hoe oud ben je")
+        let geboren = new Date().getFullYear() -jaar
+        if (geboren < 1905) {
+        alert("Deze leeftijd kan niet helemaal kloppen")
+            return
+        }
+        if (geboren > 2024 ){
+            alert("ben jij niet een beetje jong")
+            return
+        }
+        else {
+            alert("jij bent in het jaar " + geboren + " geboren")
+
+            if (geboren > 1990 && geboren < 2000) {
+                alert("dit was nog voor het jaar 2000")
+            }
+            if (geboren > 2000 && geboren < 2010) {
+                alert("Je bent gewoon al 18 of bijna 18 voel je je al oud")
+            }
+            if (geboren > 2010 && geboren < 2020) {
+                alert("Jij bent gen z")
+            }
+            if (geboren > 1980 && geboren < 1990) {
+                alert("Jij bent al best oud")
+            }
+        }
+    }
+</script>
+</body>
+</html>

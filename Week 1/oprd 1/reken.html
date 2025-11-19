@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>dit is een reken machine</h1>
+<button onclick="optellen()">Plus</button>
+<button onclick="aftrekken()">min</button>
+<button onclick="keer()">keer</button>
+<button onclick="delen()">delen door</button>
+
+<script>
+function optellen() {
+    let getal1 = prompt("eerste getal: ")
+    let getal2 = prompt("tweede getal: ")
+    getal1 = Number(getal1);
+    getal2 = Number(getal2);
+    let plus = getal1 + getal2;
+    alert(getal1 + " + " + getal2 + " = " + plus);
+
+    console.log(getal1)
+    console.log(getal2)
+    console.log(plus)
+}
+
+function aftrekken() {
+    let getal1 = prompt("eerste getal: ")
+    let getal2 = prompt("tweede getal: ")
+    getal1 = Number(getal1);
+    getal2 = Number(getal2);
+    let plus = getal1 - getal2;
+    alert(getal1 + " - " + getal2 + " = " + plus);
+
+    console.log(getal1)
+    console.log(getal2)
+    console.log(plus)
+}
+function keer() {
+    let getal1 = prompt("eerste getal: ")
+    let getal2 = prompt("tweede getal: ")
+    getal1 = Number(getal1);
+    getal2 = Number(getal2);
+    let plus = getal1 * getal2;
+    alert(getal1 + " * " + getal2 + " = " + plus);
+
+    console.log(getal1)
+    console.log(getal2)
+    console.log(plus)
+}
+function delen() {
+    let getal1 = prompt("eerste getal: ")
+    let getal2 = prompt("tweede getal: ")
+    getal1 = Number(getal1);
+    getal2 = Number(getal2);
+    let plus = getal1 / getal2;
+    alert(getal1 + " / " + getal2 + " = " + plus);
+
+    console.log(getal1)
+    console.log(getal2)
+    console.log(plus)
+}
+</script>
+</body>
+</html>
