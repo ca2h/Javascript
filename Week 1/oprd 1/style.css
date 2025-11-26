@@ -1,0 +1,42 @@
+body{
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+h1{
+    color:black
+}
+button{
+    transform: scale(1.2);
+    border-radius: 15px;
+    background-color: red;
+    font-size: 1.1em;
+    padding:10px;
+    cursor: pointer;
+    width: 
+}
+
+.container{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.verjaar{
+    display: flex;
+    flex-direction: column;
+    
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}

@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>hallo <span id="naam"></span>, en welkom op deze web pagina</h1>
 
-
+<div class="container">
+    <div class="verjaar">
 <button onclick="verjaardag()">hoe oud ben jij?</button>
+<p id="verjaardag"> </p>
+</div>
+<div class="contact">
 <button onclick="contact()">Mag ik je contact info</button>
+<p id="contact"> </p>
+</div>
+<div class="quote">
 <button onclick="quote()">Een leuke quote</button>
+<p id="quote"> </p>
+</div>
+<div class="quiz">
 <button onclick="quiz()">wil je een quiz doen</button>
-<p id="verjaardag"></p>
-<p id="score"></p>
-
+<p id="score"> </p>
+</div>
+</div>
 
 <script src="script.js"></script>
 </body>

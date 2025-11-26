@@ -12,7 +12,7 @@ function verjaardag(){
     let jaar = prompt("Welk jaar ben je Geboren?");
     let geboren = new Date().getFullYear() -jaar
     document.getElementById("verjaardag").innerText = "je bent " + geboren + " jaar oud";
-    console.log("je bent " + geboren + " oud");
+    console.log("je bent in het jaar " + geboren + "  geboren");
 }
 function contact(){
     let email=prompt("Wat is je email")
@@ -30,7 +30,7 @@ function quote(){
         "de laatste lach is het beste"
     ]
     const randomgetal = Math.floor(Math.random() * alerts.length);
-    alert(alerts[randomgetal]);
+    document.getElementById("quote").innerText = alerts[randomgetal]
 }
 
 function quiz() {
@@ -70,7 +70,7 @@ function quiz() {
             console.log(goed)
         }
 
-document.getElementById("score").innerText = goed
+document.getElementById("score").innerText = "Je hebt: " + goed + " van de 3 goed"
     }
     else {
     alert("Oke dan een andere keer.")
